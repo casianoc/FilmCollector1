@@ -1,10 +1,10 @@
 <h1>View <%= pluralize(@actors.count, "Actor")%></h1>
-<table>
+<table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Frist Name</th>
-			<th>Last Name</th>
-			<th>Actions</th>
+			<th scope="col">Frist Name</th>
+			<th scope="col">Last Name</th>
+			<th scope="col">Actions</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -12,9 +12,9 @@
 		<tr>
 			<td><%= actor.first_name %></td>
 			<td><%= actor.last_name %></td>
-			<td><a href="/actors/ <%= actor.id %>">Show</a> |
-			<td><a href="/actors/ <%= actor.id %>/edit">Edit</a> |
-			<td><a href="/actors/ <%= actor.id %>" data-method="delete"
+			<td><a href="/actors/<%= actor.id %>">Show</a> |
+			<td><a href="/actors/<%= actor.id %>/edit">Edit</a> |
+			<td><a href="/actors/<%= actor.id %>" data-method="delete"
 				data-confirm="Are you sure?">Delete</a>
 
 			</td>

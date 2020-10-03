@@ -15,10 +15,9 @@
 			<td><%= movie.title %></td>
 			<td><%= movie.duration %></td>
 			<td><%= movie.rating %></td>
-			<td><%= movie.release_date.strftime("%Y-%m-%d")></td>
-			</td>
+			<td><%= movie.release_date.strftime("%Y-%m-%d")%></td>
 		</tr>
 		<% end %>
-		/tbody>
+		</tbody>
 </table>
 <a href="/actors/new">View Actors</a>
